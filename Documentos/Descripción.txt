@@ -1,0 +1,29 @@
+Requisitos
+
+- Clientes showface
+- Software y equipos que se utilizan para el desarrollo
+- Proyectos (Portafolio)
+	- Descripcion
+	- Explicación de procesos, (Simulación, pruebas, pruebas de campo, resultados)
+	- Imágenes
+	- Plataformas en las que se realizaron los estudios.
+	- Descripción del proceso
+	- Resultados
+
+
+Empresa
+- Análisis previo al trabajo
+- Consultoría de la infraestructura y manejo de recursos
+- Cumplimiento del 'Código de Red' (Parámetros que deben de cumplir) [Reforma energética]
+- Ahorro de energía (Iluminación, evaluación técnica y económica para implementar la ilumicación) 
+- En caso de ser requerido se emplea la instalación de las herramientas
+- Casi cualquier servicio electrico.
+- Análisis y simulación de pararayos. (Plus instalación)
+- Sistemas de Tierras.
+
+
+-Hosting
+Neubox
+
+Página
+- Home (visión, visión)
