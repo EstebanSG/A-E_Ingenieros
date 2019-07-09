@@ -27,3 +27,17 @@ Neubox
 
 Página
 - Home (visión, visión)
+
+
+Imagenes
+Intro - 2048 x 900
+Parallax 1920 x 800
+Screenshots 757 x 525
+works 500 x 500
+works thumbs 250 x 250
+
+
+Dejar ventas
+Texto all-Left
+
+Proyectos > nuestros T
