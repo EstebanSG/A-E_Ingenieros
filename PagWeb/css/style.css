@@ -75,7 +75,7 @@ button {
 	user-select: none;
 }
 button.navbar-toggle {
-	background: #2b2b2b;
+	background: #edf0ee;
 	border: none;
 	color: #fff;
 }
@@ -86,7 +86,7 @@ button.navbar-toggle {
 .btn-theme:hover{
 	background: transparent !important;
 	border-color: #999;
-	color: #999;
+	color: rgb(240, 233, 233);
 }
 
 
