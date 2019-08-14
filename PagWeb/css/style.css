@@ -362,15 +362,16 @@ Intro
 #intro .carousel-control-next {
   color: #fff;
   position: absolute;
-  top: calc(50% - 15px);
+  top: calc(50% + 100px);
 }
 
 #intro .carousel-control-prev {
-  left: 20px;
+ right: 60px;
+ 
 }
 
 #intro .carousel-control-next {
-  right: 20px;
+ right: 10px;
 }
 
 #intro .carousel-control-next-icon,
