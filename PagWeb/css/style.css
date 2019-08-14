@@ -362,7 +362,7 @@ Intro
 #intro .carousel-control-next {
   color: #fff;
   position: absolute;
-  top: calc(50% + 100px);
+  top: calc(50% + 250px);
 }
 
 #intro .carousel-control-prev {
