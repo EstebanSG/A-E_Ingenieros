@@ -20,7 +20,8 @@ General
 body{
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	/*font-size: 14px;*/
+	font-size: 17px;
 	line-height: 1.6em;
 }
 
@@ -150,8 +151,8 @@ nav.navbar{
 .navbar-nav{
 	/*Información del banner */
 	float: right;
-	padding: 10px 0px 10px 0px;	
-	font-size: 17px;
+	padding: 20px 0px 20px 0px;	
+	font-size: 20px;
 
 }
 
@@ -817,7 +818,7 @@ more media queries
 		height: 100%;
 	}
 
-	.navbar-nav {
+	.navbar-nav {		
 		float: left;
 		text-align: left;
 	}
