@@ -12,13 +12,22 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/style.css" rel="stylesheet" media="screen">
   <link href="color/default.css" rel="stylesheet" media="screen">
-
-  <!-- =======================================================
-    Theme Name: Alstar
-    Theme URL: https://bootstrapmade.com/alstar-free-parallax-bootstrap-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  <script type="text/javascript">
+$(document).ready(function(){
+    function alignModal(){
+        var modalDialog = $(this).find(".modal-dialog");
+        /* Applying the top margin on modal dialog to align it vertically center */
+        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+    }
+    // Align modal when it is displayed
+    $(".modal").on("shown.bs.modal", alignModal);
+    
+    // Align modal when user resize the window
+    $(window).on("resize", function(){
+        $(".modal:visible").each(alignModal);
+    });   
+});
+</script>
 </head>
 
 <body>
@@ -43,8 +52,8 @@
           <li class="current"><a href="#intro">Inicio</a></li>
           <li><a href="#about">Nosotros</a></li>
           <li><a href="#services">Servicios</a></li>
-          <li><a href="#parallax2">Clientes</a></li>
-          <li><a href="#bottom-widget">Contacto</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -185,7 +194,7 @@
 <br>
 
 <!-- Modales -->
-<div class="modal" style="padding-top: 20%" id="piramide1">
+<div class="modal" style=" margin-top: 5em" id="piramide1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -198,19 +207,17 @@
           </div>
           <div class="og-details">
           <ul class="text-left">
-            <ul>
-              <li type="disc">Corrientes</li>
-              <li type="disc">Tensiones</li>
-              <li type="disc">Potencias (Red, Reactivos)</li>
-              <li type="disc">Factor de Potencia</li>
-              <li type="disc">Distorisión armónico de voltaje y corrientes</li>
-              <li type="disc">Frecuencia</li>
-              <li type="disc">Flicker</li>
-              <li type="disc">Desbalances</li>
-              <li type="disc">Sags y Swells</li>                            
-            </ul>
-            <li type="circle">Evaluación de Cumplimiento de Código de Red.</li>
-            <li type="circle">Plan de Trabajo</li>
+            <li type="disc">Corrientes</li>
+            <li type="disc">Tensiones</li>
+            <li type="disc">Potencias (Red, Reactivos)</li>
+            <li type="disc">Factor de Potencia</li>
+            <li type="disc">Distorisión armónico de voltaje y corrientes</li>
+            <li type="disc">Frecuencia</li>
+            <li type="disc">Flicker</li>
+            <li type="disc">Desbalances</li>
+            <li type="disc">Sags y Swells</li>
+            <li type="disc">Evaluación de Cumplimiento de Código de Red.</li>
+            <li type="disc">Plan de Trabajo</li>
           </ul>               
           </div>
         </div>
@@ -219,7 +226,7 @@
   </div>
 </div>
 
-<div class="modal" style="padding-top: 25%" id="piramide2">
+<div class="modal" style=" margin-top: 5em" id="piramide2">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -248,7 +255,7 @@
   </div>
 </div>
 
-<div class="modal" style="padding-top: 25%" id="piramide3">
+<div class="modal" style=" margin-top: 5em" id="piramide3">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -272,7 +279,7 @@
   </div>
 </div>
 
-<div class="modal" style="padding-top: 25%" id="piramide4">
+<div class="modal" style=" margin-top: 5em" id="piramide4">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -302,7 +309,7 @@
 </div>
 
 
-<div class="modal" style="padding-top: 25%" id="piramide5">
+<div class="modal" style=" margin-top: 5em" id="piramide5">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -327,7 +334,7 @@
   </div>
 </div>
 
-<div class="modal" style="padding-top: 25%" id="piramide6">
+<div class="modal" style=" margin-top: 5em" id="piramide6">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -413,8 +420,8 @@
 
   
 
-  <!-- Parallax 2 -->
-  <section id="parallax2" class="home-section parallax" data-stellar-background-ratio="0.5">
+  <!-- Clientes -->
+  <section id="clientes" class="home-section parallax" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -424,25 +431,25 @@
           </div>
           <ul class="clients">
             <li class="wow fadeInDown" data-wow-delay="0.3s"><img src="img/clients/logoCrown.png" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.32s"><img style="height: 80px; width: 200px;" src="img/clients/logoCementosMocte.jpg" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.34s"><img style="height: 80px; width: 200px;" src="img/clients/logoGalgo.png" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.32s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 200px;" src="img/clients/logoCementosMocte.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.34s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 200px;" src="img/clients/logoGalgo.png" alt="" /></li>
             <li class="wow fadeInDown" data-wow-delay="0.36s"><img src="img/clients/logoPlazaCuernavaca.png" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.38s"><img style="height: 80px; width: 200px;" src="img/clients/LOGO-C&C.jpg" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.4s"><img style="height: 80px; width: 250px;" src="img/clients/logoCentennialTowers.png" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.42s"><img style="height: 80px; width: 250px;" src="img/clients/LOGO-CFE.jpg" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.44s"><img style="height: 80px; width: 200px;" src="img/clients/LOGO-CYDSA.jpg" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.46s"><img style="height: 80px; width: 80px;" src="img/clients/LOGO-GE.jpg" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.48s"><img style="height: 80px; width: 200px;" src="img/clients/LOGO-MCAM.jpg" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.5s"><img style="height: 80px; width: 200px;" src="img/clients/LOGO-SSIE.jpg" alt="" /></li>
-            <li class="wow fadeInDown" data-wow-delay="0.52s"><img style="height: 80px; width: 200px;" src="img/clients/LOGO-ISEP.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.38s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 200px;" src="img/clients/LOGO-C&C.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.4s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 250px;" src="img/clients/logoCentennialTowers.png" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.42s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 250px;" src="img/clients/LOGO-CFE.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.44s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 200px;" src="img/clients/LOGO-CYDSA.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.46s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 80px;" src="img/clients/LOGO-GE.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.48s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 200px;" src="img/clients/LOGO-MCAM.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.5s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 200px;" src="img/clients/LOGO-SSIE.jpg" alt="" /></li>
+            <li class="wow fadeInDown" data-wow-delay="0.52s"><img style="margin-bottom: 40px; margin-right: 20px; margin-left: 20px; height: 80px; width: 200px;" src="img/clients/LOGO-ISEP.jpg" alt="" /></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Bottom widget -->
-  <section id="bottom-widget" class="section bg-white">
+  <!-- Contacto -->
+  <section id="contacto" class="section bg-white">
     <div class="container">
       <div class="row">
         <div class="section-heading">
